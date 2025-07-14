@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DR. PEJOTA – Contabilidade para Médicos</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8; /* Branco suave para o fundo */
+        }
+        .section-padding {
+            padding: 4rem 1rem; /* Padding responsivo para seções */
+        }
+        @media (min-width: 768px) {
+            .section-padding {
+                padding: 6rem 4rem;
+            }
+        }
+        .text-blue-custom {
+            color: #007bff; /* Azul claro */
+        }
+        .bg-blue-custom {
+            background-color: #007bff; /* Azul claro */
+        }
+        .text-green-custom {
+            color: #28a745; /* Verde claro */
+        }
+        .bg-green-custom {
+            background-color: #28a745; /* Verde claro */
+        }
+        .bg-black-custom {
+            background-color: #1a1a1a; /* Preto mais suave */
+        }
+        .btn-primary {
+            @apply bg-blue-custom text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-blue-600 transition duration-300 ease-in-out;
+        }
+        .btn-secondary {
+            @apply bg-green-custom text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-green-600 transition duration-300 ease-in-out;
+        }
+        .card {
+            @apply bg-white p-6 rounded-lg shadow-lg border border-gray-100;
+        }
+        .icon-medical {
+            width: 48px;
+            height: 48px;
+            color: #007bff; /* Azul claro para ícones */
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header / Hero Section -->
+    <header class="bg-black-custom text-white py-16 md:py-24 section-padding">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">DR. PEJOTA – Contabilidade para Médicos</h1>
+            <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">Contabilidade descomplicada para médicos recém-formados, residentes e clínicas em início de jornada. Planos acessíveis, flexíveis e com suporte humano para quem está começando.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#planos" class="btn-primary">Ver Planos</a>
+                <a href="#contato" class="btn-secondary">Agendar Conversa</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção de Planos Fixos -->
+    <section id="planos" class="section-padding bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Nossos Planos Fixos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Plano JÚNIOR -->
+                <div class="card text-center transform hover:scale-105 transition duration-300 ease-in-out">
+                    <h3 class="text-2xl font-semibold text-blue-custom mb-4">Plano JÚNIOR</h3>
+                    <p class="text-4xl font-bold mb-4">R$ 388<span class="text-lg font-normal">/mês</span></p>
+                    <p class="text-gray-600 mb-6">Ideal para quem está começando.</p>
+                    <ul class="text-left space-y-2 mb-8">
+                        <li class="flex items-center"><svg class="icon-medical mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Até R$ 10 mil de faturamento</li>
+                        <li class="flex items-center"><svg class="icon-medical mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Suporte completo</li>
+                        <li class="flex items-center"><svg class="icon-medical mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Abertura de empresa inclusa</li>
+                    </ul>
+                    <button class="btn-primary w-full">Assinar Plano JÚNIOR</button>
+                </div>
+
+                <!-- Plano CLÍNICO -->
+                <div class="card text-center transform hover:scale-105 transition duration-300 ease-in-out border-2 border-blue-custom">
+                    <h3 class="text-2xl font-semibold text-blue-custom mb-4">Plano CLÍNICO</h3>
+                    <p class="text-4xl font-bold mb-4">R$ 547<span class="text-lg font-normal">/mês</span></p>
+                    <p class="text-gray-600 mb-6">Para quem já tem um faturamento sólido.</p>
+                    <ul class="text-left space-y-2 mb-8">
+                        <li class="flex items-center"><svg class="icon-medical mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>De R$ 10 mil a R$ 30 mil de faturamento</li>
+                        <li class="flex items-center"><svg class="icon-medical mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Todos os benefícios do Plano Júnior</li>
+                        <li class="flex items-center"><svg class="icon-medical mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Assessoria para regularização</li>
+                    </ul>
+                    <button class="btn-primary w-full">Assinar Plano CLÍNICO</button>
+                </div>
+
+                <!-- Plano ESPECIALISTA -->
+                <div class="card text-center transform hover:scale-105 transition duration-300 ease-in-out">
+                    <h3 class="text-2xl font-semibold text-blue-custom mb-4">Plano ESPECIALISTA</h3>
+                    <p class="text-4xl font-bold mb-4">R$ 696<span class="text-lg font-normal">/mês</span></p>
+                    <p class="text-gray-600 mb-6">Para médicos com alto volume de faturamento.</p>
+                    <ul class="text-left space-y-2 mb-8">
+                        <li class="flex items-center"><svg class="icon-medical mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Acima de R$ 30 mil de faturamento</li>
+                        <li class="flex items-center"><svg class="icon-medical mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Todos os benefícios dos planos anteriores</li>
+                        <li class="flex items-center"><svg class="icon-medical mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Suporte prioritário e personalizado</li>
+                    </ul>
+                    <button class="btn-primary w-full">Assinar Plano ESPECIALISTA</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Plano Flexível -->
+    <section class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">Plano Flexível: Liberdade Total</h2>
+            <div class="card max-w-2xl mx-auto">
+                <p class="text-5xl font-bold text-green-custom mb-4">15%</p>
+                <p class="text-xl mb-6">Sobre o faturamento mensal. <span class="font-bold">Se não faturar, não paga.</span></p>
+                <p class="text-gray-600 mb-8">Ideal para residentes e autônomos com agenda variável, que buscam flexibilidade e tranquilidade financeira.</p>
+                <button class="btn-secondary w-full md:w-auto">Agendar Conversa sobre Plano Flexível</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Comparativo Fixo vs Flex -->
+    <section class="section-padding bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Fixo vs. Flexível: Qual é o seu ideal?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card">
+                    <h3 class="text-2xl font-semibold text-blue-custom mb-4">Plano Fixo</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li><span class="font-semibold">Previsibilidade total:</span> Você sabe exatamente quanto vai pagar, independentemente do seu faturamento.</li>
+                        <li><span class="font-semibold">Tranquilidade:</span> Mesmo sem receita em um mês, seus serviços contábeis estão garantidos.</li>
+                        <li><span class="font-semibold">Ideal para:</span> Médicos com faturamento mais estável ou que preferem ter um custo fixo mensal.</li>
+                        <li><span class="font-semibold">Suspensão:</span> Pode suspender por até 3 meses com aviso prévio em caso de não faturamento.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="text-2xl font-semibold text-green-custom mb-4">Plano Flexível</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li><span class="font-semibold">Liberdade total:</span> Pague apenas quando receber, proporcional ao seu faturamento.</li>
+                        <li><span class="font-semibold">Economia:</span> Se o faturamento for zero, o custo da contabilidade também é zero.</li>
+                        <li><span class="font-semibold">Ideal para:</span> Residentes, autônomos com agenda variável ou quem está em início de carreira com faturamento incerto.</li>
+                        <li><span class="font-semibold">Adaptação:</span> Perfeito para quem busca um modelo que se ajusta à sua realidade financeira.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Benefícios -->
+    <section class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Benefícios Inclusos em Todos os Planos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Benefício 1 -->
+                <div class="card flex items-start p-4">
+                    <svg class="icon-medical flex-shrink-0 mr-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Abertura da Empresa + Taxas</h3>
+                        <p class="text-gray-600">Cuidamos de todo o processo burocrático para você iniciar suas atividades sem preocupações.</p>
+                    </div>
+                </div>
+                <!-- Benefício 2 -->
+                <div class="card flex items-start p-4">
+                    <svg class="icon-medical flex-shrink-0 mr-4" fill="currentColor" viewBox="0 0 20 20"><path d="M5 13a2 2 0 012-2h6a2 2 0 012 2v2a2 2 0 01-2 2H7a2 2 0 01-2-2v-2zM11 10a1 1 0 100-2 1 1 0 000 2z"></path></svg>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Certificado Digital</h3>
+                        <p class="text-gray-600">Essencial para suas operações, garantindo segurança e agilidade em seus processos.</p>
+                    </div>
+                </div>
+                <!-- Benefício 3 -->
+                <div class="card flex items-start p-4">
+                    <svg class="icon-medical flex-shrink-0 mr-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v4a1 1 0 102 0V7zm-1 9a1 1 0 100-2 1 1 0 000 2z"></path></svg>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Assessoria para Regularização Municipal e CREMEB</h3>
+                        <p class="text-gray-600">Orientação completa para que sua atuação esteja sempre em conformidade com as exigências.</p>
+                    </div>
+                </div>
+                <!-- Benefício 4 -->
+                <div class="card flex items-start p-4">
+                    <svg class="icon-medical flex-shrink-0 mr-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3 1h10v8H5V6zm-1 9a1 1 0 100 2h12a1 1 0 100-2H4z"></path></svg>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Atendimento Via WhatsApp</h3>
+                        <p class="text-gray-600">Suporte rápido e prático para tirar suas dúvidas e resolver o que precisar, na palma da sua mão.</p>
+                    </div>
+                </div>
+                <!-- Benefício 5 -->
+                <div class="card flex items-start p-4">
+                    <svg class="icon-medical flex-shrink-0 mr-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12a1 1 0 100-2 1 1 0 000 2zm0 4a1 1 0 100-2 1 1 0 000 2zm-7-4a1 1 0 100-2 1 1 0 000 2zm0 4a1 1 0 100-2 1 1 0 000 2zm16-4a1 1 0 100-2 1 1 0 000 2zm0 4a1 1 0 100-2 1 1 0 000 2zM12 4a1 1 0 100-2 1 1 0 000 2zm0 16a1 1 0 100-2 1 1 0 000 2zm-4-8a1 1 0 100-2 1 1 0 000 2zm0 4a1 1 0 100-2 1 1 0 000 2zm4-12a1 1 0 100-2 1 1 0 000 2zm0 16a1 1 0 100-2 1 1 0 000 2zM8 4a1 1 0 100-2 1 1 0 000 2zm0 16a1 1 0 100-2 1 1 0 000 2z"></path></svg>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Emissão de DAS, Pró-labore e Folha de Pagamento</h3>
+                        <p class="text-gray-600">Garantimos que suas obrigações fiscais e trabalhistas sejam cumpridas com precisão e pontualidade.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Assistente de Termos Contábeis (Gemini API Integration) -->
+    <section class="section-padding bg-gray-100">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">Assistente de Termos Contábeis ✨</h2>
+            <p class="text-lg text-gray-700 mb-6">Digite um termo contábil ou fiscal e deixe nosso assistente descomplicar para você!</p>
+            <div class="card max-w-2xl mx-auto p-8">
+                <input type="text" id="accountingTermInput" placeholder="Ex: DAS, Pró-labore, Lucro Presumido"
+                       class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-custom mb-4">
+                <button id="explainTermBtn" class="btn-primary w-full mb-6">Explicar Termo ✨</button>
+                <div id="loadingIndicator" class="hidden text-center text-blue-custom font-semibold">
+                    Carregando explicação...
+                </div>
+                <div id="explanationOutput" class="text-left text-gray-800 bg-gray-50 p-4 rounded-lg border border-gray-200 min-h-[100px] flex items-center justify-center">
+                    <p class="text-gray-500">A explicação aparecerá aqui.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de FAQ -->
+    <section class="section-padding bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Perguntas Frequentes (FAQ)</h2>
+            <div class="space-y-6">
+                <!-- Pergunta 1 -->
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold text-blue-custom mb-2">1. Posso mudar de plano a qualquer momento?</h3>
+                    <p class="text-gray-700">Sim, você pode mudar de plano a qualquer momento, de acordo com as suas necessidades e evolução do seu faturamento. Nossa equipe está pronta para te auxiliar nessa transição.</p>
+                </div>
+                <!-- Pergunta 2 -->
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold text-blue-custom mb-2">2. E se eu não tiver faturamento no plano fixo?</h3>
+                    <p class="text-gray-700">No plano fixo, caso você não tenha faturamento, é possível suspender o plano por até 3 meses, mediante aviso prévio. Assim, você tem flexibilidade mesmo com a previsibilidade do plano fixo.</p>
+                </div>
+                <!-- Pergunta 3 (Adicional) -->
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold text-blue-custom mb-2">3. Como funciona o suporte via WhatsApp?</h3>
+                    <p class="text-gray-700">Nosso atendimento via WhatsApp é direto e eficiente. Você terá um canal exclusivo para tirar dúvidas, solicitar documentos e receber orientações rápidas e personalizadas da nossa equipe.</p>
+                </div>
+                <!-- Pergunta 4 (Adicional) -->
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold text-blue-custom mb-2">4. Quais documentos preciso para abrir minha empresa?</h3>
+                    <p class="text-gray-700">Nossa equipe irá te guiar em todo o processo, solicitando os documentos necessários como RG, CPF, comprovante de residência, entre outros. Simplificamos a burocracia para você!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Depoimentos -->
+    <section class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">O que nossos clientes dizem</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Depoimento 1 -->
+                <div class="card p-6 flex flex-col items-center text-center">
+                    <img src="https://placehold.co/100x100/007bff/ffffff?text=Dr.+J" alt="Foto do Dr. João Batista" class="rounded-full w-24 h-24 object-cover mb-4 border-2 border-blue-custom">
+                    <p class="italic text-gray-700 mb-4">“Comecei minha carreira com o DR. PEJOTA e não me preocupo com nada de contabilidade. Eles me deram todo o suporte desde o primeiro contato, e a clareza nas informações fez toda a diferença. Recomendo fortemente!”</p>
+                    <p class="font-semibold text-blue-custom">– Dr. João Batista, Ortopedista</p>
+                </div>
+                <!-- Depoimento 2 -->
+                <div class="card p-6 flex flex-col items-center text-center">
+                    <img src="https://placehold.co/100x100/28a745/ffffff?text=Dra.+A" alt="Foto da Dra. Aline Vasconcelos" class="rounded-full w-24 h-24 object-cover mb-4 border-2 border-green-custom">
+                    <p class="italic text-gray-700 mb-4">“Eles me ajudaram a entender tudo o que eu precisava para abrir minha clínica. O atendimento é super humano e consultivo, me senti acolhida e segura em cada etapa. Um parceiro essencial para o meu crescimento!”</p>
+                    <p class="font-semibold text-green-custom">– Dra. Aline Vasconcelos, Ginecologista</p>
+                </div>
+                <!-- Depoimento 3 (Fictício) -->
+                <div class="card p-6 flex flex-col items-center text-center">
+                    <img src="https://placehold.co/100x100/1a1a1a/ffffff?text=Dr.+R" alt="Foto do Dr. Ricardo Silva" class="rounded-full w-24 h-24 object-cover mb-4 border-2 border-gray-700">
+                    <p class="italic text-gray-700 mb-4">“Com o DR. PEJOTA, consegui focar na medicina sem me preocupar com a burocracia. O plano flexível se encaixou perfeitamente na minha rotina de residente, e o suporte é sempre muito ágil e claro. Excelente serviço!”</p>
+                    <p class="font-semibold text-gray-700">– Dr. Ricardo Silva, Residente em Pediatria</p>
+                </div>
+                <!-- Depoimento 4 (Fictício) -->
+                <div class="card p-6 flex flex-col items-center text-center">
+                    <img src="https://placehold.co/100x100/007bff/ffffff?text=Dra.+C" alt="Foto da Dra. Camila Mendes" class="rounded-full w-24 h-24 object-cover mb-4 border-2 border-blue-custom">
+                    <p class="italic text-gray-700 mb-4">“A equipe do DR. PEJOTA é incrível! Desde o primeiro atendimento, a clareza e a atenção foram impecáveis. Me sinto muito mais tranquila sabendo que minha contabilidade está em boas mãos. Profissionalismo e humanidade caminhando juntos.”</p>
+                    <p class="font-semibold text-blue-custom">– Dra. Camila Mendes, Dermatologista</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de CTA Final -->
+    <section id="contato" class="bg-black-custom text-white py-16 md:py-24 section-padding text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Pronto para Descomplicar sua Contabilidade Médica?</h2>
+            <p class="text-lg md:text-xl mb-10">Escolha o plano ideal para você ou agende uma conversa com nossos especialistas para um atendimento personalizado.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#" class="btn-primary">Assinar um Plano Agora</a> <!-- Link para checkout/pagamento -->
+                <a href="https://wa.me/075999922907" target="_blank" class="btn-secondary">Agendar Conversa via WhatsApp</a> <!-- Link para WhatsApp -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>&copy; 2024 DR. PEJOTA – Contabilidade para Médicos. Todos os direitos reservados.</p>
+            <p class="mt-2 text-sm">Feito com carinho para a comunidade médica.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript para a funcionalidade do Assistente de Termos Contábeis
+        document.getElementById('explainTermBtn').addEventListener('click', async () => {
+            const inputElement = document.getElementById('accountingTermInput');
+            const outputElement = document.getElementById('explanationOutput');
+            const loadingIndicator = document.getElementById('loadingIndicator');
+            const term = inputElement.value.trim();
+
+            if (!term) {
+                outputElement.innerHTML = '<p class="text-red-500">Por favor, digite um termo para explicar.</p>';
+                return;
+            }
+
+            outputElement.innerHTML = ''; // Limpa a saída anterior
+            loadingIndicator.classList.remove('hidden'); // Mostra o indicador de carregamento
+
+            try {
+                let chatHistory = [];
+                const prompt = `Explique de forma simples e direta o termo contábil/fiscal '${term}' para médicos recém-formados no Brasil, considerando que a contabilidade deve ser descomplicada. Mantenha a resposta concisa e focada no essencial.`;
+                chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+
+                const payload = { contents: chatHistory };
+                const apiKey = ""; // A chave da API será fornecida em tempo de execução pelo ambiente Canvas
+                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                const result = await response.json();
+
+                if (result.candidates && result.candidates.length > 0 &&
+                    result.candidates[0].content && result.candidates[0].content.parts &&
+                    result.candidates[0].content.parts.length > 0) {
+                    const text = result.candidates[0].content.parts[0].text;
+                    outputElement.innerHTML = `<p>${text}</p>`;
+                } else {
+                    outputElement.innerHTML = '<p class="text-red-500">Não foi possível obter uma explicação. Tente novamente.</p>';
+                }
+            } catch (error) {
+                console.error('Erro ao chamar a API Gemini:', error);
+                outputElement.innerHTML = '<p class="text-red-500">Ocorreu um erro ao processar sua solicitação. Por favor, tente mais tarde.</p>';
+            } finally {
+                loadingIndicator.classList.add('hidden'); // Esconde o indicador de carregamento
+            }
+        });
+    </script>
+
+</body>
+</html>
